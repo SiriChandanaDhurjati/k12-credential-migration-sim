@@ -1,0 +1,18 @@
+# pearson-k12-migration-sim
+# Python 3.10+
+
+# No third-party dependencies required for the core pipeline —
+# uses only Python standard library (csv, sqlite3, re, datetime, pathlib, argparse).
+# This is intentional: the patterns (watermark, schema mapping, reconciliation)
+# should be readable without needing to install anything.
+
+# For running tests:
+pytest>=7.0
+pytest-cov>=4.0
+
+# Optional: if you want to run against a real SQL Server instead of SQLite
+# pyodbc>=4.0
+
+# Optional: for PySpark version of the reconciliation checks
+# pyspark>=3.4
+# delta-spark>=2.4
